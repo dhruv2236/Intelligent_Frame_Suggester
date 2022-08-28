@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Seipkon is a Premium Quality Admin Site Responsive Template"/>
+    <meta name="keywords"
+          content="admin template, admin, admin dashboard, cms, Seipkon Admin, premium admin templates, responsive admin, panel, software, ui, web app, application"/>
+    <meta name="author" content="Themescare">
+    <title>Intelligent Frame Suggester- admin template</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/adminResources/image/favicon-32x32.png">
+    <link rel="stylesheet" href="../../static/adminResources/css/animate.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/themify-icons.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/jquery-jvectormap.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/summernote.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/seipkon.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/responsive.css">
+</head>
+<body>
+
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<div class="wrapper">
+    {% include 'admin/header.html' %}
+    {% include 'admin/menu.html' %}
+    <section id="content" class="seipkon-content-wrapper">
+        <div class="page-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcromb-area">
+                            <div class="row">
+                                <div class="col-md-6  col-sm-6">
+                                    <div class="seipkon-breadcromb-left">
+                                        <h3>Dashboard</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="seipkon-breadcromb-right">
+                                        <ul>
+                                            <li><a href="index.html">home</a></li>
+                                            <li>dashboard</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="clock" class="widget_card alert">
+                            <div class="widget_card_header">
+                              <span class="widget_close" data-toggle="tooltip" title="Remove" data-dismiss="alert"
+                                    aria-label="close">
+                              <i class="fa fa-times"></i>
+                              </span>
+                            </div>
+                            <div class="widget_card_body">
+                                <p class="date">{{ session['date'] }}</p>
+                                <h3 class="time">{{ session['time'] }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="widget_visitor" class="widget_card alert">
+                            <div class="widget_card_header">
+                              <span class="widget_close" data-toggle="tooltip" title="Remove" data-dismiss="alert"
+                                    aria-label="close">
+                              <i class="fa fa-times"></i>
+                              </span>
+                            </div>
+                            <div class="widget_card_body">
+                                <div class="widget_icon">
+                                    <i class="fa fa-eye"></i>
+                                </div>
+                                <div class="widget_text">
+                                    <h3 class="count">{{totalUserCount}}</h3>
+                                    <p>Total User</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="widget_user" class="widget_card alert">
+                            <div class="widget_card_header">
+                              <span class="widget_close" data-toggle="tooltip" title="Remove" data-dismiss="alert"
+                                    aria-label="close">
+                              <i class="fa fa-times"></i>
+                              </span>
+                            </div>
+                            <div class="widget_card_body">
+                                <div class="widget_icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div class="widget_text">
+                                    <h3 class="count">{{totalComplainCount}}</h3>
+                                    <p>Total Complain</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="widget_profits" class="widget_card alert">
+                            <div class="widget_card_header">
+                              <span class="widget_close" data-toggle="tooltip" title="Remove" data-dismiss="alert"
+                                    aria-label="close">
+                              <i class="fa fa-times"></i>
+                              </span>
+                            </div>
+                            <div class="widget_card_body">
+                                <div class="widget_icon">
+                                    <i class="fa fa-flask"></i>
+                                </div>
+                                <div class="widget_text">
+                                    <h3>$<span class="count">{{totalFeedbackCount}}</span></h3>
+                                    <p>Total Feedback</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include 'admin/footer.html' %}
+    </section>
+</div>
+
+<script src="../../static/adminResources/js/jquery-3.1.0.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap-select.min.js"></script>
+<script src="../../static/adminResources/js/moment.min.js"></script>
+<script src="../../static/adminResources/js/daterangepicker.js"></script>
+<script src="../../static/adminResources/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="../../static/adminResources/js/jquery-jvectormap-world-mill-en.js"></script>
+<script src="../../static/adminResources/js/jvector-init.js"></script>
+<script src="../../static/adminResources/js/raphael.min.js"></script>
+<script src="../../static/adminResources/js/morris.min.js"></script>
+<script src="../../static/adminResources/js/jquery.sparkline.js"></script>
+<script src="../../static/adminResources/js/Chart.js"></script>
+<script src="../../static/adminResources/js/jquery.dataTables.min.js"></script>
+<script src="../../static/adminResources/js/jquery-perfect-scrollbar.min.js"></script>
+<script src="../../static/adminResources/js/vue.min.js"></script>
+<script src="../../static/adminResources/js/summernote.js"></script>
+<script src="../../static/adminResources/js/custom-summernote.js"></script>
+<script src="../../static/adminResources/js/dashboard.js"></script>
+<script src="../../static/adminResources/js/seipkon.js"></script>
+</body>
+</html>

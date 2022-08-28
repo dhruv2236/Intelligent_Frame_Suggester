@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Seipkon is a Premium Quality Admin Site Responsive Template"/>
+    <meta name="keywords"
+          content="admin template, admin, admin dashboard, cms, Seipkon Admin, premium admin templates, responsive admin, panel, software, ui, web app, application"/>
+    <meta name="author" content="Themescare">
+    <!-- Title -->
+    <title>Intelligent Frame Suggester- User Template</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/adminResources/image/favicon-32x32.png">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../../static/adminResources/css/animate.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../static/adminResources/css/bootstrap.min.css">
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="../../static/adminResources/css/font-awesome.min.css">
+    <!-- Themify Icon CSS -->
+    <link rel="stylesheet" href="../../static/adminResources/css/themify-icons.css">
+    <!-- Perfect Scrollbar CSS -->
+    <link rel="stylesheet" href="../../static/adminResources/css/perfect-scrollbar.min.css">
+    <!-- Toggles CSS -->
+    <link rel="stylesheet" href="../../static/adminResources/css/toggles-full.css">
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="../../static/adminResources/css/select2.min.css">
+    <!-- Color Picker CSS -->
+    <link rel="stylesheet" href="../../static/adminResources/css/bootstrap-colorpicker.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../../static/adminResources/css/seipkon.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../../static/adminResources/css/responsive.css">
+</head>
+<body>
+
+<!-- Start Page Loading -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<!-- End Page Loading -->
+
+<!-- Wrapper Start -->
+<div class="wrapper">
+    <!-- Main Header Start -->
+    {% include 'user/header.html' %}
+    <!-- Main Header End -->
+
+    <!-- Sidebar Start -->
+    <aside class="seipkon-main-sidebar">
+        <nav id="sidebar">
+
+            <!-- Sidebar Profile Start -->
+            <div class="sidebar-profile clearfix">
+                <div class="profile-avatar">
+                    <img src="../../static/adminResources/image/avatar.jpg" alt="profile"/>
+                </div>
+                <div class="profile-info">
+                    <h3>Jhon Doe</h3>
+                    <p>Welcome Admin !</p>
+                </div>
+            </div>
+            <!-- Sidebar Profile End -->
+
+            <!-- Menu Section Start -->
+            {% include 'user/menu.html' %}
+            <!-- Menu Section End -->
+
+            <!-- Menu Section Start -->
+            <!--<div class="menu-section">
+               <h3>Forms,Table & widget</h3>
+               <ul class="list-unstyled components">
+                  <li>
+                     <a href="seipcon_widget.html">
+                     <i class="fa fa-th"></i>
+                     Widgets
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#charts" data-toggle="collapse" aria-expanded="false">
+                     <i class="fa fa-pie-chart"></i>
+                     Charts
+                     </a>
+                     <ul class="collapse list-unstyled" id="charts">
+                        <li><a href="chartsjs.html">chart js</a></li>
+                        <li><a href="morrris.html">morris</a></li>
+                        <li><a href="sparkline.html">sparkline</a></li>
+                     </ul>
+                  </li>
+                  <li class="active">
+                     <a href="#forms" data-toggle="collapse" aria-expanded="false">
+                     <i class="fa fa-edit"></i>
+                     Forms
+                     </a>
+                     <ul class="collapse list-unstyled" id="forms">
+                        <li><a href="general-form.html">General Form</a></li>
+                        <li><a href="advance-components.html">Advance Components</a></li>
+                        <li><a href="form-layouts.html">Form layouts</a></li>
+                        <li class="active"><a href="form-validation.html">form validation</a></li>
+                        <li><a href="form-wizards.html">form wizards</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#table" data-toggle="collapse" aria-expanded="false">
+                     <i class="fa fa-table"></i>
+                     Tables
+                     </a>
+                     <ul class="collapse list-unstyled" id="table">
+                        <li><a href="basic-table.html">basic table</a></li>
+                        <li><a href="advance-table.html">table Advance</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <!-- Menu Section End -->
+
+            <!-- Menu Section Start -->
+            <!-- <div class="menu-section">
+                <h3>Extra components</h3>
+                <ul class="list-unstyled components">
+                   <li>
+                      <a href="#ex_components" data-toggle="collapse" aria-expanded="false">
+                      <i class="fa fa-book"></i>
+                      Additional Pages
+                      </a>
+                      <ul class="collapse list-unstyled" id="ex_components">
+                         <li><a href="profile.html">profile page</a></li>
+                         <li><a href="invoice.html">Invoice</a></li>
+                         <li><a href="gallery.html">gallery</a></li>
+                         <li><a href="blank.html">Blank</a></li>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="#ex_authentication" data-toggle="collapse" aria-expanded="false">
+                      <i class="fa fa-unlock-alt"></i>
+                      Authentication
+                      </a>
+                      <ul class="collapse list-unstyled" id="ex_authentication">
+                         <li><a href="login.html">Login</a></li>
+                         <li><a href="register.html">Register</a></li>
+                         <li><a href="lockscreen.html">Lockscreen</a></li>
+                         <li><a href="recover-pass.html">Recover password</a></li>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="#ex_error" data-toggle="collapse" aria-expanded="false">
+                      <i class="fa fa-exclamation-circle"></i>
+                      Error Pages
+                      </a>
+                      <ul class="collapse list-unstyled" id="ex_error">
+                         <li><a href="error-404.html">404 Not Found</a></li>
+                         <li><a href="error-505.html">505 Forbidden</a></li>
+                         <li><a href="error-500.html">500 Internal Server</a></li>
+                         <li><a href="error-503.html">503 Service Unavailable</a></li>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="#ex_multlable" data-toggle="collapse" aria-expanded="false">
+                      <i class="fa fa-map-signs"></i>
+                      Multilevel
+                      </a>
+                      <ul class="collapse list-unstyled" id="ex_multlable">
+                         <li><a href="#">Level One</a></li>
+                         <li>
+                            <a href="#ex_multlable_2" data-toggle="collapse" aria-expanded="false">
+                            Level One
+                            </a>
+                            <ul class="collapse list-unstyled" id="ex_multlable_2">
+                               <li><a href="#">Level Two</a></li>
+                               <li>
+                                  <a href="#ex_multlable_3" data-toggle="collapse" aria-expanded="false">
+                                  Level Two
+                                  </a>
+                                  <ul class="collapse list-unstyled" id="ex_multlable_3">
+                                     <li><a href="#">Level Three</a></li>
+                                     <li><a href="#">Level Three</a></li>
+                                  </ul>
+                               </li>
+                            </ul>
+                         </li>
+                         <li><a href="#">Level One</a></li>
+                      </ul>
+                   </li>
+                </ul>
+             </div>
+             <!-- Menu Section End -->
+
+        </nav>
+    </aside>
+    <!-- End Sidebar -->
+
+    <!-- Right Side Content Start -->
+    <section id="content" class="seipkon-content-wrapper">
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- Breadcromb Row Start -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcromb-area">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="seipkon-breadcromb-left">
+                                        <h2>Post Complain</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="seipkon-breadcromb-right">
+                                        <ul>
+                                            <li><a href="/">home</a></li>
+                                            <li> Manage Complain</li>
+                                            <li> Post Complain</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Breadcromb Row -->
+
+                <!-- Validation Form Row Start -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-box">
+                            <div class="form-example">
+                                <h3>Complain</h3>
+                                <div class="form-validation-box">
+                                    <div class="form-wrap">
+                                        <form data-parsley-validate action="/user/insertComplain" method="post"
+                                              enctype="multipart/form-data">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label"> Complain Subject:</label>
+                                                        <input type="text" name="complainSubject" class="form-control"
+                                                               required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label"> ComplainDescription:</label>
+                                                        <textarea name="complainDescription" class="form-control"
+                                                                  required></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-validation-box">
+                                                    <div class="form-wrap">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label"> Complain Attachment:</label>
+                                                        <input type="file" name="file"
+                                                               class="form-control" s required></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="form-layout-submit">
+                                                                    <button type="submit"
+                                                                            class="btn btn-info">
+                                                                        Submit
+                                                                    </button>
+                                                                    <button type="reset"
+                                                                            class="btn btn-danger">
+                                                                        cancel
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- End Validation Form Row -->
+
+                                </div>
+                            </div>
+
+                            <!-- Footer Area Start -->
+                            {% include 'user/footer.html' %}
+                            <!-- End Footer Area -->
+
+    </section>
+    <!-- End Right Side Content -->
+
+</div>
+<!-- End Wrapper -->
+
+
+<!-- jQuery -->
+<script src="../../static/adminResources/js/jquery-3.1.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+<!-- Perfect Scrollbar JS -->
+<script src="../../static/adminResources/js/jquery-perfect-scrollbar.min.js"></script>
+<!-- Toggles JS -->
+<script src="../../static/adminResources/js/jquery.maskedinput.min.js"></script>
+<!-- Select2 JS -->
+<script src="../../static/adminResources/js/select2.full.js"></script>
+<!-- Jquery parsley JS -->
+<script src="../../static/adminResources/js/parsley.min.js"></script>
+<!-- Custom JS -->
+<script src="../../static/adminResources/js/seipkon.js"></script>
+</body>
+</html>
+

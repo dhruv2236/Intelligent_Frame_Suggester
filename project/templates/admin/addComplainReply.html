@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Seipkon is a Premium Quality Admin Site Responsive Template"/>
+    <meta name="keywords"
+          content="admin template, admin, admin dashboard, cms, Seipkon Admin, premium admin templates, responsive admin, panel, software, ui, web app, application"/>
+    <meta name="author" content="Themescare">
+    <title>Intelligent Frame Suggester- admin template</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/adminResources/image/favicon-32x32.png">
+    <link rel="stylesheet" href="../../static/adminResources/css/animate.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/themify-icons.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/toggles-full.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/select2.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/seipkon.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/responsive.css">
+</head>
+<body>
+
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
+<div class="wrapper">
+    {% include 'admin/header.html' %}
+    <aside class="seipkon-main-sidebar">
+        <nav id="sidebar">
+            <div class="sidebar-profile clearfix">
+                <div class="profile-avatar">
+                    <img src="../../static/adminResources/image/avatar.jpg" alt="profile"/>
+                </div>
+                <div class="profile-info">
+                    <h3>Jhon Doe</h3>
+                    <p>Welcome Admin !</p>
+                </div>
+            </div>
+
+            {% include 'admin/menu.html' %}
+        </nav>
+    </aside>
+
+    <section id="content" class="seipkon-content-wrapper">
+        <div class="page-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcromb-area">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="seipkon-breadcromb-left">
+                                        <h3>Manage Reply</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="seipkon-breadcromb-right">
+                                        <ul>
+                                            <li><a href="/">home</a></li>
+                                            <li>Manage Complain</li>
+                                            <li>Reply</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcromb-area">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="seipkon-breadcromb-left">
+                                        <h2>Post Complain</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="seipkon-breadcromb-right">
+                                        <ul>
+                                            <li><a href="/">home</a></li>
+                                            <li>post Feedback</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-box">
+                            <div class="form-example">
+                                <h3>Complain</h3>
+                                <div class="form-validation-box">
+                                    <div class="form-wrap">
+                                        <form data-parsley-validate action="/admin/insertComplainReply" method="post"
+                                              enctype="multipart/form-data">
+
+                                            <div class="form-group">
+                                                <input type="hidden" name="complainId" value="{{ complainId }}"
+                                                       class="form-control" required>
+
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Reply Subject:</label>
+                                                            <input type="text" name="replySubject" class="form-control"
+                                                                   required>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Reply Message:</label>
+                                                            <textarea name="replyMessage" class="form-control"
+                                                                      required></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-validation-box">
+                                                        <div class="form-wrap">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="control-label">Upload
+                                                                File:</label>
+                                                            <input type="file" name="file"
+                                                                   class="form-control" s required></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-layout-submit">
+                                                                        <button type="submit"
+                                                                                class="btn btn-info">
+                                                                            Submit
+                                                                        </button>
+                                                                        <button type="reset"
+                                                                                class="btn btn-danger">
+                                                                            cancel
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            {% include 'admin/footer.html' %}
+    </section>
+</div>
+
+
+<script src="../../static/adminResources/js/jquery-3.1.0.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+<script src="../../static/adminResources/js/jquery-perfect-scrollbar.min.js"></script>
+<script src="../../static/adminResources/js/jquery.maskedinput.min.js"></script>
+<script src="../../static/adminResources/js/select2.full.js"></script>
+<script src="../../static/adminResources/js/parsley.min.js"></script>
+<script src="../../static/adminResources/js/seipkon.js"></script>
+</body>
+</html>
+

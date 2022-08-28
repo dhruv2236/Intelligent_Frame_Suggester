@@ -1,0 +1,85 @@
+<aside class="seipkon-main-sidebar">
+    <nav id="sidebar">
+        <div class="sidebar-profile clearfix">
+            <div class="profile-avatar">
+                <img src="../../static/adminResources/image/avatar.jpg" alt="profile"/>
+            </div>
+            <div class="profile-info">
+                <h3>Jhon Doe</h3>
+                <p>Welcome Admin !</p>
+            </div>
+        </div>
+        <div class="menu-section">
+            <ul class="list-unstyled components">
+
+                {#-----------------------------------------------------    DeshBoard   ----------------------------------------------------------#}
+                <li class="active">
+                    <a href="/admin/loadDashboard">
+                        <i class="fa fa-dashboard"></i>
+                        Admin Dashboard
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="#frame" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-th"></i>
+                        Manage Frame
+                    </a>
+                    <ul class="collapse list-unstyled" id="frame">
+                        <li><a href="/admin/loadFrame">Add Frame</a></li>
+                        <li><a href="/admin/viewFrame">View Frame</a></li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#apps" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-th"></i>
+                        Manage Dataset
+                    </a>
+                    <ul class="collapse list-unstyled" id="apps">
+                        <li><a href="/admin/loadDataset">Add Dataset</a></li>
+                        <li><a href="/admin/viewDataset">View Dataset</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="active">
+                    <a href="/admin/viewUser">
+                        <i class="fa fa-dashboard"></i>
+                        Manage User
+                    </a>
+                </li>
+
+
+                <li class="active">
+                    <a href="/admin/viewComplain">
+                        <i class="fa fa-dashboard"></i>
+                        Manage Complain
+                    </a>
+                </li>
+
+
+                <li class="active">
+                    <a href="/admin/viewFeedback">
+                        <i class="fa fa-dashboard"></i>
+                        Manage Feedback
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="menu-section">
+            <ul class="list-unstyled components">
+            </ul>
+        </div>
+        <div class="menu-section">
+            <ul class="list-unstyled components">
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </nav>
+</aside>
